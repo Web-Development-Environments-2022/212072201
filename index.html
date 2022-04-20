@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>
+    MyWebsite
+  </title>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
+  <div id="menu">
+    
+      <a href="#top" id="logo" class="logo">ADI'S WEBSITE.COM</a>
+    
+<!-- <div id="menu"> -->
+<a href="#about" class="menuLink">About Me</a>&nbsp;&nbsp;|  &nbsp;&nbsp; 
+<a href="#photos" class="menuLink">My Photos</a>&nbsp;&nbsp;|  &nbsp;&nbsp;
+<a href="#playlist" class="menuLink">My Playlist</a>&nbsp;&nbsp;|  &nbsp;&nbsp;
+<a href="#like" class="menuLink">Like</a>&nbsp;&nbsp;|  &nbsp;&nbsp;
+<a href="#qrcoder" class="menuLink">QR code</a>&nbsp;&nbsp;|  &nbsp;&nbsp;
+<a href="#spa" class="menuLink">Q&A</a>&nbsp;&nbsp;|  &nbsp;&nbsp;
+<a href="#contact" class="menuLink">Contact Me</a> 
+<!-- </div> -->
+  </div>
 		  
 <section id="about" class="section">
 <br/>
@@ -31,8 +39,9 @@
 <br/>
 <br/>
 <br/>
-about me
-<br/>
+<h1 class="section-header-h"><span class="section-header">About me , BUZZ ALDRIN</span></h1>
+<span class="formlabel">Born in New Jersey,USA. 92 years old. Second man to land on the moon. <br> Spent 12 days on space. <br> First man to be photoed on the moon. <br> #APOLO11</span>
+  <br/>
 <br/>
 <br/>
 </section>
@@ -54,7 +63,9 @@ about me
 <br/>
 <br/>
 <br/>
-my photos
+<h1 class="section-header-h"><span class="section-header">My photos</span></h1>
+<img src="buzz.PNG">
+<img src="buzz2.PNG">
 <br/>
 <br/>
 <br/>
@@ -77,7 +88,12 @@ my photos
 <br/>
 <br/>
 <br/>
-my playlist
+<h1 class="section-header-h"><span class="section-header">my playlist</span></h1>
+
+<!-- my playlist -->
+<div id="video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <br/>
 <br/>
 <br/>
@@ -100,7 +116,12 @@ my playlist
 <br/>
 <br/>
 <br/>
-give me a like
+<h1 class="section-header-h"><span class="section-header">give me a like</span></h1>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v13.0" nonce="KcswlEv9"></script>
+
+<div class="fb-like" data-href="https://www.facebook.com/ynetnews/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+<!-- give me a like -->
 <br/>
 <br/>
 <br/>
@@ -123,7 +144,9 @@ give me a like
 <br/>
 <br/>
 <br/>
-scan my code
+<h1 class="section-header-h"><span class="section-header">scan my code</span></h1>
+<img src="qrcode.png" width="300px">
+<!-- scan my code -->
 <br/>
 <br/>
 <br/>
@@ -146,7 +169,83 @@ scan my code
 <br/>
 <br/>
 <br/>
-ans
+<h1 class="section-header-h"><span class="section-header">ans</span></h1>
+<br>
+<br>
+<h2 style="text-align: center;">Q1</h2>
+
+<div class="table">
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Page location</th>
+    <th>Information collecting</th>
+    <th>Technology updates</th>
+  </tr>
+  <tr>
+    <td>Web1</td>
+    <td><span class="tabletext">
+      The pages are located in portals. User can click on links posted on the portal and arrive the page. The pages are static website. Impossible to add content, or reply or update content without updating the HTML page by owner.
+    </span>
+    </td>
+    <td>The information can be understood from the web is the information written by owner of website.</td>
+    <td>The main new technologies are HTTP, HTML, CSS, URL.</td>
+  </tr>
+  <tr>
+    <td>Web2</td>
+    <td>
+      <span class="tabletext">
+        There are search engines. User can type query and get results. Each result leads to a page.
+        Dynamic website. Viewers can create and share their own content. Based on client-server. Many social networks, blogs.
+      </span>
+    </td>
+    <td>The information can be understood from the web is the information written by owner of website & the information written by users.</td>
+    <td>The main new technology is Client-Server</td>
+  </tr>
+  <tr>
+    <td>Web3</td>
+    <td>      
+      <span class="tabletext">
+        There are crawlers scanning the map of the web, and than creating the DB for the search engines.
+      </span>
+    </td>
+    <td>The information can be understood from the web is the information can be understood by AI programs that scan the information written by the users&owners.</td>
+    <td>Many new technologies such as AI, crawler, cloud.</td>
+  </tr>
+</table>
+</div>
+
+<br>
+<br>
+<h2 style="text-align: center;">Q2</h2>
+
+<div class="table">
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Web1</th>
+    <th>Web2</th>
+    <th>Web3</th>
+  </tr>
+
+  <tr>
+    <td>Searching the "sports" query</td>
+    <td>      
+      <span class="tabletext">
+        In web1 we will get a list of portals with the subject of sports. The content will be classified by the owners as related to sports.
+      </span>
+    </td>
+    <td>
+      In web2 we will get a list of sport-related pages, not necessarily with title of "sports" but related to it (by SEO tags for example).
+    </td>
+    <td>
+      In web3 we will get more accurate sport-related pages list, created by a combination of public and private information. The list will be created by AI programs that will make each user the most accurate list for him.
+    </td>
+  </tr>
+</table>
+</div>
+
+<!-- ans -->
 <br/>
 <br/>
 <br/>
@@ -169,7 +268,37 @@ ans
 <br/>
 <br/>
 <br/>
-contact me
+<h1 class="section-header-h"><span class="section-header">contact me</span></h1>
+<br>
+<div class="form">
+<form onsubmit="return emailsending(this)"  enctype="text/plain" >
+    <span class="formlabel">Mail:</span><br> 
+  <input type="email" id="emailval" >
+  <br>
+  <br>
+  <span class="formlabel">
+    Your message:
+  </span><br>
+  <input type="text" id="message">
+  <br>
+  <br>
+  <span class="formlabel">
+    Choose emoji:
+  </span><br>
+  <select id="selectEmoji">
+    <option value="128536"><span>&#128536;</span></option>
+    <option value="128540"><span>&#128540;</span></option>
+    <option value="128541">&#128541;</option>
+    <option value="128552">&#128552;</option>
+    <option value="128557">&#128557;</option>
+  </select>
+  <br>
+  <br>
+  <input type="submit" value="SUBMIT">
+  <br>
+</form>
+</div>
+<!-- contact me -->
 <br/>
 <br/>
 <br/>
@@ -189,5 +318,20 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+<script type="text/javascript">
+function emailsending()
+{
+  var emailval = document.getElementById('emailval').value;  
+  var message= document.getElementById('message').value;  
+  var emoji = document.getElementById('selectEmoji').value;
+  var v= "mailto:".concat(emailval,"?headers='charset=utf-8'&body=",message, " &#", emoji,";");
+
+  // " &#",emoji var v= "mailto:".concat(emailval,"?body=\<html><head><meta charset=\"UTF-8\"><title></title></head><body>",message," &#",emoji);
+    window.location.href = v;
+    return false;
+}
+
+</script>
 </body>
 </html>
