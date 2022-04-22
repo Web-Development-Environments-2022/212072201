@@ -95,7 +95,7 @@ Label{
 	font-size: 100px;
 }
 
-input , select{
+input , select, textarea{
 	width: 100%;
 	padding: 10px 10px;
 	background-color: #3CBC8D;
