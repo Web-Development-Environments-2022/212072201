@@ -271,15 +271,15 @@
 <h1 class="section-header-h"><span class="section-header">contact me</span></h1>
 <br>
 <div class="form">
-<form onsubmit="return emailsending(this)"  enctype="text/plain" >
-    <span class="formlabel">Mail:</span><br> 
-  <input type="email" id="emailval" >
+<form onsubmit="return emailsending(this)"   enctype="multipart/form-data" >
+    <span class="formlabel">Subject:</span><br> 
+  <input type="text" id="emailval" >
   <br>
   <br>
   <span class="formlabel">
     Your message:
   </span><br>
-  <input type="text" id="message">
+  <textarea type="text" id="message"></textarea>
   <br>
   <br>
   <span class="formlabel">
@@ -325,7 +325,7 @@ function emailsending()
   var emailval = document.getElementById('emailval').value;  
   var message= document.getElementById('message').value;  
   var emoji = document.getElementById('selectEmoji').value;
-  var v= "mailto:".concat(emailval,"?headers='charset=utf-8'&body=",message, " &#", emoji,";");
+  var v= "mailto:".concat("toris@post.bgu.ac.il?subject=",emailval,"&body=",message, " &#", emoji,";");
 
   // " &#",emoji var v= "mailto:".concat(emailval,"?body=\<html><head><meta charset=\"UTF-8\"><title></title></head><body>",message," &#",emoji);
     window.location.href = v;
